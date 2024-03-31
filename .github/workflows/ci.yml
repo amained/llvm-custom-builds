@@ -19,7 +19,7 @@ jobs:
             # inside the archive. Dereferencing the files when packing them
             # adds an additional copy per link, but it reliably works and
             # the additional size is not too large on Windows.
-          - {id: 'windows-amd64', os: 'windows-2019', tar_extra_args: '--dereference'}
+          - {id: 'windows-amd64', os: 'windows-2022', tar_extra_args: '--dereference'}
         llvm_version: ['17.x']
         llvm_repo_url: ['https://github.com/llvm/llvm-project.git']
       fail-fast: true
